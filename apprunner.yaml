@@ -1,0 +1,13 @@
+version: 1.0
+runtime: python3 
+build:
+  commands:
+    build:        
+      - pip install -r requirements.txt
+run:
+  command: python application.py
+  env:
+   - name : NAME_FIRST
+     value: "IP-4-IT"
+   - name : NAME_LAST
+     value: "ip_4_it"
